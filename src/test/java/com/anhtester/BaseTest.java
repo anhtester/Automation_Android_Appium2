@@ -16,14 +16,24 @@ public class BaseTest {
 
     public AndroidDriver driver;
     private AppiumDriverLocalService service;
+    private AppiumServiceBuilder builder;
     private UiAutomator2Options option;
 
     @BeforeSuite
     public void RunServer() {
-        service = AppiumDriverLocalService.buildDefaultService();
-        service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\votha\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withTimeout(Duration.ofSeconds(120))
-                .withIPAddress("0.0.0.0").usingPort(4723).build();
+        //Build the Appium service
+        builder = new AppiumServiceBuilder();
+        builder.withIPAddress("0.0.0.0");
+        builder.usingPort(4723);
+
+        //Start the server with the builder
+        service = AppiumDriverLocalService.buildService(builder);
         service.start();
+
+//        service = AppiumDriverLocalService.buildDefaultService();
+//        service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\votha\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withTimeout(Duration.ofSeconds(120))
+//                .withIPAddress("0.0.0.0").usingPort(4723).build();
+//        service.start();
     }
 
     @BeforeClass
