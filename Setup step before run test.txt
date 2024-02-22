@@ -11,7 +11,7 @@ Run CMD trong platform-tools và enter command: adb help
 Run CMD and enter command: adb devices
 
 + Tắt Emulator đang chạy: adb -s emulator-5554 emu kill
-emulator-5554 là tên cần tắt
+emulator-5554 là tên cần tắt (terminate)
 
 + Kiểm tra các công cụ đều có trong thư mục sau:
 C:\Users\votha\AppData\Local\Android\sdk
@@ -36,17 +36,17 @@ VD: emulator @Pixel_7_Pro_API_33_Android_13
 
 The following Android Virtual Devices could not be loaded:
     Name: Pixel_3a_API_34
-    Path: C:\Users\votha\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd
+    Path: C:\Users\<your_username>\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd
    Error: Missing system image for Google APIs x86_64 Pixel_3a_API_34.
 ---------
     Name: Pixel_6_Pro_API_34
-    Path: C:\Users\votha\.android\avd\Pixel_6_Pro_API_34.avd
+    Path: C:\Users\<your_username>\.android\avd\Pixel_6_Pro_API_34.avd
    Error: Missing system image for Google APIs x86_64 Pixel_6_Pro_API_34.
 ---------
     Name: Pixel_7_Pro_API_33_Android_13
-    Path: C:\Users\votha\.android\avd\Pixel_7_Pro_API_33.avd
+    Path: C:\Users\<your_username>\.android\avd\Pixel_7_Pro_API_33.avd
    Error: Missing system image for Google Play x86_64 Pixel_7_Pro_API_33_Android_13.
 ---------
     Name: Pixel_XL_API_30_Android_11
-    Path: C:\Users\votha\.android\avd\Pixel_XL_API_30.avd
+    Path: C:\Users\<your_username>\.android\avd\Pixel_XL_API_30.avd
    Error: Missing system image for Google APIs x86 Pixel_XL_API_30_Android_11.
