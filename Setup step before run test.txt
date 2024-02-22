@@ -1,0 +1,52 @@
+CÀI ANDROID STUDIO TRƯỚC
+https://developer.android.com/studio
+
++ Kiểm tra thư mục sau có tồn tại chưa:
+C:\Users\votha\AppData\Local\Android\Sdk\platform-tools
+
++ Hiện các lệnh gợi ý:
+Run CMD trong platform-tools và enter command: adb help
+
++ Kiểm tra list devices:
+Run CMD and enter command: adb devices
+
++ Tắt Emulator đang chạy: adb -s emulator-5554 emu kill
+emulator-5554 là tên cần tắt
+
++ Kiểm tra các công cụ đều có trong thư mục sau:
+C:\Users\votha\AppData\Local\Android\sdk
+(có emulator, build-tools, platforms, platform-tools, cmdline-tools)
+C:\Users\votha\AppData\Local\Android\Sdk\platform-tools
+C:\Users\votha\AppData\Local\Android\Sdk\emulator
+C:\Users\votha\AppData\Local\Android\Sdk\cmdline-tools\bin
+
++ Add hết 4 link trên vào biến path của Variables máy
+
++ cmdline-tools có thể tải tại đây:
+https://www.techtutsonline.com/setup-android-command-line-tools-in-windows-10/#Downloading_and_installing_Android_command-line_tools
+https://developer.android.com/studio (kéo xuống dưới đoạn "Command line tools only")
+
++ Tạo thiết bị ảo trên Android Studio trước, sau đó chạy lệnh để kiểm tra:
+avdmanager list avd
+Sẽ dùng cho sau này không cần mở Android Studio
+
++ Mở devices ảo lên dựa vào Name của nó
+emulator @<Name>
+VD: emulator @Pixel_7_Pro_API_33_Android_13
+
+The following Android Virtual Devices could not be loaded:
+    Name: Pixel_3a_API_34
+    Path: C:\Users\votha\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd
+   Error: Missing system image for Google APIs x86_64 Pixel_3a_API_34.
+---------
+    Name: Pixel_6_Pro_API_34
+    Path: C:\Users\votha\.android\avd\Pixel_6_Pro_API_34.avd
+   Error: Missing system image for Google APIs x86_64 Pixel_6_Pro_API_34.
+---------
+    Name: Pixel_7_Pro_API_33_Android_13
+    Path: C:\Users\votha\.android\avd\Pixel_7_Pro_API_33.avd
+   Error: Missing system image for Google Play x86_64 Pixel_7_Pro_API_33_Android_13.
+---------
+    Name: Pixel_XL_API_30_Android_11
+    Path: C:\Users\votha\.android\avd\Pixel_XL_API_30.avd
+   Error: Missing system image for Google APIs x86 Pixel_XL_API_30_Android_11.

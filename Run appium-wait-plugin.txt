@@ -1,0 +1,19 @@
+Run appium-wait-plugin
+
+**Prerequisite
+Appium version >= 2.0
+
+**Installation - Server
+Install the plugin using Appium's plugin CLI, either as a named plugin or via NPM:
+
+appium plugin install --source=npm appium-wait-plugin
+
+**Installation - Client
+No special action is needed to make things work on the client side.
+
+Activation the plugin will not be active unless turned on when invoking the Appium server:
+
+appium --use-plugins=element-wait
+
+**Config Timeout
+driver.executeScript("plugin: setWaitPluginProperties", ImmutableMap.of("timeout", 10000 , "intervalBetweenAttempts", 500 ));

@@ -1,0 +1,30 @@
+Run appium-device-farm
+
+**Prerequisite
+Appium version 2.0.X
+
+**Installation - Server
+Install the plugin using Appium's plugin CLI, either as a named plugin or via NPM:
+
+appium plugin install --source=npm appium-device-farm
+appium plugin install --source=npm appium-dashboard
+
+**Installation - Client
+No special action is needed to make things work on the client side.
+
+**Activation the plugin will not be active unless turned on when invoking the Appium server. See "Argument options" below
+
+APPIUM 1:
+appium server -ka 800 --use-plugins=device-farm,appium-dashboard  -pa /wd/hub --plugin-device-farm-platform=android
+
+APPIUM 2:
+appium server -ka 800 --use-plugins=element-wait,device-farm,appium-dashboard  -pa / --plugin-device-farm-platform=android
+
+You can also pass all the arguments in a config file.
+https://github.com/AppiumTestDistribution/appium-device-farm/blob/main/server-config.json
+
+appium server -ka 800 --use-plugins=device-farm --config ./server-config.json -pa /wd/hub
+
+
+**Device UI
+Navigate to localhost:4723/device-farm once the appium server is started.
