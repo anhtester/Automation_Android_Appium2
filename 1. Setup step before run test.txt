@@ -28,25 +28,27 @@ https://developer.android.com/studio (kéo xuống dưới đoạn "Command line
 
 + Tạo thiết bị ảo trên Android Studio trước, sau đó chạy lệnh để kiểm tra:
 avdmanager list avd
-Sẽ dùng cho sau này không cần mở Android Studio
+
+(Sẽ dùng cho sau này không cần mở Android Studio)
 
 + Mở devices ảo lên dựa vào Name của nó
 emulator @<Name>
-VD: emulator @Pixel_7_Pro_API_33_Android_13
+VD: emulator @Pixel_7_Pro_API_34
 
 The following Android Virtual Devices could not be loaded:
-    Name: Pixel_3a_API_34
-    Path: C:\Users\<your_username>\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd
-   Error: Missing system image for Google APIs x86_64 Pixel_3a_API_34.
----------
-    Name: Pixel_6_Pro_API_34
-    Path: C:\Users\<your_username>\.android\avd\Pixel_6_Pro_API_34.avd
-   Error: Missing system image for Google APIs x86_64 Pixel_6_Pro_API_34.
+
 ---------
     Name: Pixel_7_Pro_API_33_Android_13
-    Path: C:\Users\<your_username>\.android\avd\Pixel_7_Pro_API_33.avd
-   Error: Missing system image for Google Play x86_64 Pixel_7_Pro_API_33_Android_13.
+    Path: C:\Users\votha\.android\avd\Pixel_7_Pro_API_33.avd
 ---------
     Name: Pixel_XL_API_30_Android_11
-    Path: C:\Users\<your_username>\.android\avd\Pixel_XL_API_30.avd
-   Error: Missing system image for Google APIs x86 Pixel_XL_API_30_Android_11.
+    Path: C:\Users\votha\.android\avd\Pixel_XL_API_30.avd
+---------
+    Name: Pixel_6_Pro_API_34
+    Path: C:\Users\votha\.android\avd\Pixel_6_Pro_API_34.avd
+---------
+    Name: Pixel_7_Pro_API_34
+    Path: C:\Users\votha\.android\avd\Pixel_7_Pro_API_34.avd
+---------
+    Name: Pixel_3a_API_34
+    Path: C:\Users\votha\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd

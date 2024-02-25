@@ -1,0 +1,7 @@
+Open CMD 1:
+
+appium server -ka 800 --use-plugins=element-wait,device-farm,appium-dashboard  -pa / --plugin-device-farm-platform=android
+
+Open CMD 2:
+
+localhost:4723/device-farm
