@@ -7,7 +7,7 @@
     </listeners>
     <test name="Auto Android with Appium 2">
         <classes>
-            <class name="com.anhtester.DemoAppTest">
+            <class name="com.anhtester.testcases.DemoAppTest">
                 <methods>
                     <include name="CheckOutOrderTest"/>
                 </methods>

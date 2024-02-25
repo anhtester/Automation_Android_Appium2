@@ -11,7 +11,7 @@
 
  * Appium 2.x.x
 
- * java-client 8.x.x 
+ * java-client 9.x.x 
  
  * TestNG
  
@@ -40,8 +40,8 @@
 
  ### 🚀 Running Tests
 
-1. Start appium server: `appium` 
-2. Start android emulator
+1. Start android emulator
+2. Start appium server: `appium` 
 3. Run testng.xml file 
 4. Generate reports using allure report
 

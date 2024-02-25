@@ -5,3 +5,5 @@ appium server -ka 800 --use-plugins=element-wait,device-farm,appium-dashboard  -
 Open CMD 2:
 
 localhost:4723/device-farm
+or
+localhost:4723/dashboard

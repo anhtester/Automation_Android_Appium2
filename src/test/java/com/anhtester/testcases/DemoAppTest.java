@@ -1,20 +1,17 @@
-package com.anhtester;
+package com.anhtester.testcases;
 
+import com.anhtester.common.BaseTest;
 import com.anhtester.screens.HomeScreen;
 import com.anhtester.utils.JsonReader;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Description;
-import io.qameta.allure.testng.AllureTestNg;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import java.io.File;
 import java.io.IOException;
 
 public class DemoAppTest extends BaseTest {
