@@ -4,25 +4,21 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.time.Duration;
 
 public class BaseTest {
 
     public AndroidDriver driver;
     private AppiumDriverLocalService service;
-    private AppiumServiceBuilder builder;
     private UiAutomator2Options option;
 
     @BeforeSuite
     public void RunServer() {
         //Build the Appium service
-        builder = new AppiumServiceBuilder();
+        AppiumServiceBuilder builder = new AppiumServiceBuilder();
         builder.withIPAddress("0.0.0.0");
         builder.usingPort(4723);
 
