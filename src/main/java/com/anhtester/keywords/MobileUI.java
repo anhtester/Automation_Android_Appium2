@@ -13,7 +13,6 @@ public class MobileUI {
         }
     }
 
-
     /**
      * appium-wait-plugin
      * Installation: appium plugin install --source=npm appium-wait-plugin

@@ -16,7 +16,7 @@ public class BaseTest {
     private UiAutomator2Options option;
 
     @BeforeSuite
-    public void RunServer() {
+    public void runServer() {
         //Build the Appium service
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
         builder.withIPAddress("0.0.0.0");
@@ -25,15 +25,10 @@ public class BaseTest {
         //Start the server with the builder
         service = AppiumDriverLocalService.buildService(builder);
         service.start();
-
-//        service = AppiumDriverLocalService.buildDefaultService();
-//        service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\votha\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withTimeout(Duration.ofSeconds(120))
-//                .withIPAddress("0.0.0.0").usingPort(4723).build();
-//        service.start();
     }
 
     @BeforeClass
-    public void RunApplication() {
+    public void runApplication() {
         option = new UiAutomator2Options();
         option.setDeviceName(System.getProperty("deviceName"));
         option.setPlatformName(System.getProperty("platformName"));
@@ -46,7 +41,6 @@ public class BaseTest {
     @BeforeMethod
     public void createAndroidDriver() throws MalformedURLException {
         driver = new AndroidDriver(new URL("http://0.0.0.0:4723"), option);
-        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
     @AfterMethod

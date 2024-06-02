@@ -38,7 +38,7 @@ public class DemoAppTest extends BaseTest {
                             "Then user should return to Home screen"
             )
     @Test(description = "Executing E2E ordering item scenario")
-    public void CheckOutOrderTest() throws IOException, ParseException {
+    public void CheckOutOrderTest() {
         new HomeScreen(driver)
                 .clickOnOpenMenu()
                 .clickOnLoginButton()
